@@ -7,7 +7,7 @@ public class Test {
                    // Заданіе 9
 
     String var;
-          var =  (number % 2)!=0 ? "Нечетное" : "Четное";
+          var =  (number%2!=0) ? "Нечетное" : "Четное";
                   System.out.println(var);
 
                   // Заданіе 10
