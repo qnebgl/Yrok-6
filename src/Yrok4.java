@@ -1,7 +1,10 @@
+import java.util.Scanner ;
 public class Yrok4 {
     public static void main(String[] args) {
-        System.out.println("Hello!");
-        System.out.println("world");
-    }
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
 
+        System.out.println(number);
+
+    }
 }
