@@ -52,7 +52,19 @@ public class Zadanie68 {
 
     static int median(int[] array) {
         int median = 0;
-        java.util.Arrays.sort(array);
+        boolean sorted = false;
+        int temp;
+        while(!sorted) {
+            sorted = true;
+            for (int i = 0; i < array.length - 1; i++) {
+                if (array[i] > array[i+1]) {
+                    temp = array[i];
+                    array[i] = array[i+1];
+                    array[i+1] = temp;
+                    sorted = false;
+                }
+            }
+        }
         for (int i = 0; i < array.length; i++) {
             if (array.length % 2 == 1) {
                 median = Math.round(array[array.length / 2]);
